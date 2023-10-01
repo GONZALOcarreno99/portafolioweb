@@ -29,9 +29,14 @@ function mostrarMensaje(event) {
     var correo = document.getElementById('correo').value;
 
     if (nombre === '' || correo === '') {
-        alert('Por favor, completa todos los campos.');
+        var mensajeErrorDiv = document.getElementById('mensajeError');
+        mensajeErrorDiv.classList.remove('oculto');
         return false; // Evita el envío del formulario si la validación falla
     }
+
+    // Oculta el mensaje de error si estaba visible
+    var mensajeErrorDiv = document.getElementById('mensajeError');
+    mensajeErrorDiv.classList.add('oculto');
 
     var mensajeDiv = document.getElementById('mensaje');
     mensajeDiv.classList.remove('oculto');

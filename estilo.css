@@ -522,7 +522,22 @@ button:hover {
 .mensaje {
     display: block;
     padding: 20px;
-    background-color: #4CAF50;
+    background-color: #51b655b7;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.oculto {
+    display: none;
+}
+
+.mensajeError {
+    display: block;
+    padding: 20px;
+    background-color: #FF5050;
     color: white;
     text-align: center;
     margin-top: 20px;
