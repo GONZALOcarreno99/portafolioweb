@@ -485,7 +485,7 @@ html {
 .campo {
     margin-bottom: 15px;
     border-radius: 8px;
-    color: #288191; /* Cambiado el valor para un borde más suave */
+    color: #111135; /* Cambiado el valor para un borde más suave */
 }
 
 label {
@@ -497,7 +497,7 @@ label {
 input, textarea {
     width: calc(100% - 20px);
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 6px; /* Agregado para bordes redondeados en los campos */
 }
