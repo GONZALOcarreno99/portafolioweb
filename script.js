@@ -24,8 +24,18 @@ function responsiveMenu() {
     }
 }
 
-function mostrarMensaje() {
-    var mensajeDiv = document.getElementById('mensaje');
-    mensajeDiv.classList.remove('oculto');
+function mostrarMensaje(event) {
+    event.preventDefault();  // Evita el envío predeterminado del formulario
+
+    var nombre = document.getElementById('nombre').value;
+    var correo = document.getElementById('correo').value;
+
+    if (nombre === '' || correo === '') {
+        alert('Por favor, completa todos los campos.');
+    } else {
+        var mensajeDiv = document.getElementById('mensaje');
+        mensajeDiv.classList.remove('oculto');
+    }
 }
+
 
