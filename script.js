@@ -25,5 +25,7 @@ function responsiveMenu() {
 }
 
 function mostrarMensaje() {
-    alert('¡Gracias por enviar tu formulario!');
+    var mensajeDiv = document.getElementById('mensaje');
+    mensajeDiv.classList.remove('oculto');
 }
+

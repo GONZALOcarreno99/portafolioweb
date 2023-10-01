@@ -519,6 +519,22 @@ button:hover {
     background-color: #1c6a75;
 }
 
+.mensaje {
+    display: block;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.oculto {
+    display: none;
+}
+
+
 
 /* Media queries para dispositivos móviles */
 @media (max-width: 768px) {
