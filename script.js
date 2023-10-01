@@ -25,17 +25,16 @@ function responsiveMenu() {
 }
 
 function mostrarMensaje(event) {
-    event.preventDefault();  // Evita el envío predeterminado del formulario
-
     var nombre = document.getElementById('nombre').value;
     var correo = document.getElementById('correo').value;
 
     if (nombre === '' || correo === '') {
         alert('Por favor, completa todos los campos.');
-    } else {
-        var mensajeDiv = document.getElementById('mensaje');
-        mensajeDiv.classList.remove('oculto');
+        return false; // Evita el envío del formulario si la validación falla
     }
-}
 
+    var mensajeDiv = document.getElementById('mensaje');
+    mensajeDiv.classList.remove('oculto');
+    return true; // Permite el envío del formulario si la validación es exitosa
+}
 
