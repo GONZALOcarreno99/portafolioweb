@@ -23,3 +23,7 @@ function responsiveMenu() {
         x.className = "";
     }
 }
+
+function mostrarMensaje() {
+    alert('¡Gracias por enviar tu formulario!');
+}
