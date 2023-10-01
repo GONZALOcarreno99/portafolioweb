@@ -497,6 +497,7 @@ label {
 input, textarea {
     width: calc(100% - 20px);
     padding: 10px;
+    background-color: #b3b3b315;
     border: 1px solid #000000;
     box-sizing: border-box;
     border-radius: 6px; /* Agregado para bordes redondeados en los campos */
